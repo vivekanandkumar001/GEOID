@@ -13,7 +13,8 @@ Public interface
 """
 
 from typing import Optional
-
+from engines.gdp_fetcher import get_gdp_data
+from engines.gdp_fetcher import fetch_gdp
 _DATA: dict[str, dict[str, float]] = {
     "US": {"Finance & Insurance":21,"Technology":18,"Healthcare":14,"Manufacturing":11,"Energy":8,"Real Estate":9,"Government":12,"Agriculture":1,"Other Services":6},
     "CN": {"Manufacturing":27,"Real Estate":13,"Finance":16,"Technology":14,"Energy":9,"Agriculture":7,"Construction":8,"Other Services":6},

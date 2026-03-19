@@ -14,7 +14,8 @@ Public interface
 
 import statistics
 from typing import Any
-
+from engines.gdp_fetcher import get_gdp_data
+from engines.gdp_fetcher import fetch_gdp
 # Population estimates (millions, ~2024)
 _POP: dict[str, float] = {
     "US": 335.0, "CN": 1410.0, "JP":  124.0, "DE":   84.0,

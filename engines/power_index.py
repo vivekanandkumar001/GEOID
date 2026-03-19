@@ -19,7 +19,8 @@ Public interface
 
 import math
 from engines.economy_calc import calculate_gdp_per_capita
-
+from engines.gdp_fetcher import get_gdp_data
+from engines.gdp_fetcher import fetch_gdp
 _W_GDP    = 0.55
 _W_CAPITA = 0.20
 _W_STAB   = 0.15

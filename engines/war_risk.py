@@ -16,7 +16,8 @@ import hashlib
 import time
 from dataclasses import dataclass, asdict
 from typing import Any
-
+from engines.gdp_fetcher import get_gdp_data
+from engines.gdp_fetcher import fetch_gdp
 _BASE: dict[str, float] = {
     "US": 18.0, "CN": 42.0, "JP": 12.0, "DE": 10.0, "IN": 36.0,
     "GB": 14.0, "FR": 17.0, "BR": 22.0, "IT": 11.0, "CA":  8.0,

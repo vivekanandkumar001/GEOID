@@ -13,7 +13,8 @@ import logging
 from dataclasses import dataclass, asdict
 from typing import Any
 import numpy as np
-
+from engines.gdp_fetcher import get_gdp_data
+from engines.gdp_fetcher import fetch_gdp
 logger = logging.getLogger(__name__)
 
 FORECAST_YEARS = 3

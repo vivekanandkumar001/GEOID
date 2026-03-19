@@ -13,7 +13,8 @@ Public interface
 import hashlib
 import time
 from typing import Any
-
+from engines.gdp_fetcher import get_gdp_data
+from engines.gdp_fetcher import fetch_gdp
 _SEV_WEIGHT = {"CRITICAL": 0, "HIGH": 1, "MEDIUM": 2, "LOW": 3}
 
 # (title, country, severity, category)

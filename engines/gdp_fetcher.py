@@ -14,7 +14,8 @@ import logging
 import os
 import time
 from typing import Optional
-
+from engines.gdp_fetcher import get_gdp_data
+from engines.gdp_fetcher import fetch_gdp
 import requests
 
 logger = logging.getLogger(__name__)
