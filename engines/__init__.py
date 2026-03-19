@@ -14,3 +14,4 @@ sector_data      GDP sector breakdowns per country
 war_news         Intelligence headlines feed
 """
 from engines.gdp_fetcher import fetch_gdp
+from engines.gdp_fetcher import get_gdp_data
