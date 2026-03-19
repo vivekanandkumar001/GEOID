@@ -13,3 +13,4 @@ ai_gdp_forecast  Ensemble ML forecast (poly + holt + ridge)
 sector_data      GDP sector breakdowns per country
 war_news         Intelligence headlines feed
 """
+from engines.gdp_fetcher import fetch_gdp
