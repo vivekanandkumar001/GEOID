@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geoid-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: geoid
+  template:
+    metadata:
+      labels:
+        app: geoid
+    spec:
+      containers:
+      - name: geoid
+        image: geoid-dashboard:latest
+        ports:
+        - containerPort: 5000
